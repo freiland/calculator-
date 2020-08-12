@@ -28,7 +28,9 @@ $(document).ready(function() {
   $("#output").text(result);
   });
 
-  $("form#add").submit(function(event) {
+  
+  
+  $("form#subtract").submit(function(event) {
     event.preventDefault();
 
   const number1 = parseInt($("#add1").val());
@@ -37,12 +39,25 @@ $(document).ready(function() {
   $("#output").text(result);
   });
 
+  
+  
   $("form#multiply").submit(function(event) {
     event.preventDefault();
 
   const number1 = parseInt($("#add1").val());
   const number2 = parseInt($("#add2").val());
   const result = multiply(number1, number2);
+  $("#output").text(result);
+  });
+  
+  
+  
+  $("form#divide").submit(function(event) {
+    event.preventDefault();
+
+  const number1 = parseInt($("#add1").val());
+  const number2 = parseInt($("#add2").val());
+  const result = divide(number1, number2);
   $("#output").text(result);
   });
 });
